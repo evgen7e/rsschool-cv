@@ -4,10 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
     <title>CV</title>
 </head>
 <body>
-    <div class='caption'>CV</div>
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <nav class="header__nav">
+                    <ul class="header__nav__list">
+                        <li class="header__nav__item">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="header__nav__item">
+                            <a href="#education">Education</a>
+                        </li>
+                        <li class="header__nav__item">
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li class="header__nav__item">
+                            <a href="#code">Code</a>
+                        </li>
+                        <li class="header__nav__item">
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li class="header__nav__item">
+                            <a href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__content">    
+                    <div class="header__photo">
+                        <img src="images/photo.png" alt="photo">
+                    </div>                
+                    <div class="header__title">
+                        <h1>Evgenii Sobornikov</h1>
+                        <h2>Junior Frontend Developer</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main__container">
+                <div class="about" id="about">
+                    <h2>About me</h2>
+                    <p>I'm 28 years old. I have been working in IT for 7 years. I started with software maintenance, now I work as a technologist. My goal is to become a front-end developer. I hope that the knowledge gained in the course of passing the RS School course will help me with this.</p>
+                    <br>
+                    <p>Key strengths</p>
+                    <ul class="about__strengths">
+                        <li>Hardworking</li>
+                        <li>Responsible</li>
+                        <li>Purposeful</li>
+                        <li>Conscientious</li>
+                        <li>Communicable</li>
+                    </ul>
+                    <br>
+                    <p>Languages</p>
+                    <ul class="about__strengths">
+                        <li>Russian - native speaker</li>
+                        <li>English - A2 (B1 in proccess)</li>
+                    </ul>
+                </div>
+                <div class="education" id="education">
+                    <h2>Education</h2>
+                    <ul class="education__list">
+                        <li class="education__item">
+                            <p class="education__year">2011 - 2015</p>
+                            <p>Yaroslavl Demidov State University - The Faculty of Information and Computer Science (bachelor)</p>
+                        </li>
+                        <li class="education__item">
+                            <p class="education__year">2015 - 2017</p>
+                            <p>Yaroslavl Demidov State University - The Faculty of Information and Computer Science (master)</p>
+                        </li>
+                        <li class="education__item">
+                            <p class="education__year">2021 - now</p>
+                            <p>The Rolling Scopes School</p>
+                        </li>
+                    </ul>    
+                </div>
+                <div class="skills" id="skills">
+                    <h2>Skills</h2>
+                    <ul class="skills__list">
+                        <li class="skills__item skills__html">HTML</li>
+                        <li class="skills__item skills__css">CSS</li>
+                        <li class="skills__item skills__js">JavaScript</li>
+                        <li class="skills__item skills__git">GitHub</li>
+                    </ul>    
+                </div>
+                <div class="code" id="code">
+                    <h2>Code Example</h2>
+                    <pre class="code__example"><code><span class="code_keyword">function</span> <span class="code_func_name">isDivideBy</span>(<span class="code_func_params">number, a, b</span>) {<br> <span class="code_keyword">return</span> (<span class="code_red">number</span> % <span class="code_red">a</span> == <span class="code_brown">0</span> && <span class="code_red">number</span> % <span class="code_red">b</span> == <span class="code_brown">0</span>) ? <br><span class="code_brown">true</span> : <span class="code_brown">false</span>;<br>}</code></pre>
+                </div>
+                <div class="projects" id="projects">
+                    <h2>Projects</h2>
+                    <ul class="projects__list">
+                        <li class="projects__item">
+                            <a href="https://evgen7e.github.io/rsschool-cv/" target="_blank">CV</a>
+                        </li>
+                    </ul> 
+                </div>
+                <div class="contacts" id="contacts">
+                    <h2>Contacts</h2>
+                    <ul class="contacts__list">
+                        <li class="contacts__item contacts_tg"><a href="https://t.me/sobornikov" target="_blank">t.me/sobornikov</a></li>
+                        <li class="contacts__item contacts_disc"><a href="https://discord.com/channels/516715744646660106/846687560944189460" target="_blank">evgen7e</a></li>
+                        <li class="contacts__item contacts_email"><a href="mailto:evgen7e@yandex.ru">evgen7e@yandex.ru</a></li>
+                        <li class="contacts__item contacts_geo"><a href="https://yandex.ru/maps/-/CCUyJRBtGA" target="_blank">Russia, Yaroslavl</a></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__container">
+                <a class="footer__rsschool" href="https://rs.school/js/" target="_blank"><img src="icons/rs_school.svg" alt="rsshool logo"></a>
+                <a class="footer__github" href="https://github.com/evgen7e" target="_blank"><img src="icons/github_foot.svg" alt="github logo"></a>
+                <p class="footer__year">Created in<br>2021-2022</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
